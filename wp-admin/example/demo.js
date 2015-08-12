@@ -51,14 +51,7 @@
         component: 'checkbox',
         label: 'Pets',
         description: 'Do you have any pets?',
-        options: ['Dog', 'Cat','meau']
-      });
-       checkbox2 = $builder.addFormObject('default', {
-        id: 'checkbox2',
-        component: 'checkbox',
-        label: 'Pets',
-        description: 'Do you have any pets?',
-        options: ['Dog', 'Cat','meau']
+        options: ['Dog', 'Cat']
       });
       $builder.addFormObject('default', {
         component: 'sampleInput'
