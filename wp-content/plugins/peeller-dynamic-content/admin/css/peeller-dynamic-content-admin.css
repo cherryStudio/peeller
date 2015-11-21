@@ -2,4 +2,215 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+#post-body.columns-2 #postbox-container-1 {
+}
 .fb-component{padding:10px;cursor:move}.fb-component input{cursor:move}.fb-component label{cursor:move}.fb-component select{cursor:move}.fb-component textarea{cursor:move}.fb-form-object-editable{padding:10px}.fb-form-object-editable.fb-draggable{cursor:move}.fb-form-object-editable.fb-draggable input{cursor:move}.fb-form-object-editable.fb-draggable label{cursor:pointer}.fb-form-object-editable.fb-draggable select{cursor:move}.fb-form-object-editable.fb-draggable textarea{cursor:move}.fb-form-object-editable.empty{cursor:default;margin:6px;height:80px;border:dashed 1px #aaa;background-color:#eee}.fb-draggable.dragging{background-color:#ffffff;position:absolute;z-index:800;-webkit-box-shadow:#666 0 0 20px;-moz-box-shadow:#666 0 0 20px;box-shadow:#666 0 0 20px}.fb-required:after{color:#b94a48;content:' *'}.fb-builder{min-height:250px}.popover .control-label{text-align:left}.popover form{width:240px}
+#titlediv #title-prompt-text {
+    color: #777;
+    position: absolute;
+    font-size: 1.7em;
+    padding: 4px 10px;
+}
+.sidebar-menu li {
+    position: relative;
+    overflow: hidden;
+}
+.sidebar-menu > li > a {
+    line-height: 48px;
+    padding-left: 16px;
+    font-size: 1.15rem;
+}
+.sidebar-menu a {
+    display: block;
+    font-weight: 500;
+    text-decoration: none;
+}
+.components-box{
+    background: #363b3e;
+    font-size: 13px;
+    color: #fff;
+    padding: 13px 15px;
+}
+.builder-wrap{
+    background: #e9e9e9;
+    padding:20px;
+   
+    z-index: 999999;
+    left: 0;
+    margin: 20px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.form-wrap{
+        padding: 17px 20%;
+}
+.fb-component{
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    -webkit-transition: margin 0.2s;
+    transition: margin 0.2s;
+    position: relative;
+    left: 1px;
+    float: left;
+    margin: 3px !important;
+    border: 1px solid #2e2f33 !important;
+    border-radius: 3px !important;
+    box-shadow: inset 0 0 2px rgba(255,255,255,0.2) !important;
+    width: 89px !important;
+    height: 72px !important;
+    background: #4B5155 !important;
+    padding: 5px 0 0 !important;
+    color: #8f969a !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2) !important;
+}
+.fb-component .input-wrapper{
+    display:none;
+}
+.control-label.ng-binding{
+    text-align: left;
+}
+
+.fb-component >.form-group >.control-label{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 28px;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+.fa {
+    height: 30px;
+    width: 30px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #f3f3f3;
+    text-shadow: rgba(0,0,0,0.3) 0px 1px 1px !important;
+}
+.panel-heading{    
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 10px 15px;
+    background-color: #49bf67;
+    color:white;
+}
+
+.fb-form-object-editable i{
+    display: none;
+}
+#components-box  h3 {
+    z-index: 1;
+    margin: 16px 3px;
+    padding: 0;
+    height: 20px;
+    background: #586065;
+    opacity: .85;
+    line-height: 20px;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 -1px 1px #000;
+}
+.fb-form-object-editable.fb-draggable label {
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.49;
+    color: #666666;
+}
+.fb-component .form-control {
+    display: block;
+    width: 100%;
+    height: 39px;
+    padding: 9px 12px;
+    font-size: 13px;
+    line-height: 1.49;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #dddddd;
+    border-radius: 0px;
+    -webkit-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+}
+.dz-message {
+    border: 1px dashed #CCC;
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+}
+#fsModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 99999;
+}
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.handlediv,
+.hndle.ui-sortable-handle{
+    display: none;
+}
+.postbox{
+    border: none;
+    box-shadow: none;
+    width: 100%;
+/*    position: absolute;
+    top: 0px;
+    left: -30px;*/
+    background: #F7F7F7;
+}
+.navbar-fixed-top {
+    top:30px;
+}
+.postbox .inside{
+    padding: 0;
+}
+.cpt.container{
+    padding-top: 28px;
+
+    /*  //  position: fixed;
+    top: 30px;
+    left:20px;*/
+    
+}
+.cpt-details input[type=text]{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #32373c;
+    outline: 0;
+    -webkit-transition: none;
+    background: transparent;
+}
+.cpt-details input[type=text]:focus {
+    border: none;
+    box-shadow: none;
+    outline:none;
+    outline-width: 0;
+}
+.navbar-default {
+    background-color: #3F9CFF;
+}

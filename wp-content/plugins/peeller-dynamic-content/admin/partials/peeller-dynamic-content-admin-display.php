@@ -15,19 +15,19 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <!doctype html>
-<html ng-app="app">
+<html ng-app="app" ng-view>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>angular-form-builder</title>
+    <title>test</title>
  
 
 </head>
 <body class="container" ng-controller="DemoController">
     <div class="row">
-        <h1>angular-form-builder</h1>
+        <h1>test</h1>
         <hr/>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Builder</h3>
@@ -36,7 +36,7 @@
                 <div class="panel-footer">
                     <div class="checkbox">
                         <label><input type="checkbox" ng-model="isShowScope" />
-                            Show scope
+                        s
                         </label>
                     </div>
                     <pre ng-if="isShowScope">{{form}}</pre>
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-2">
             <div fb-components></div>
         </div>
     </div>

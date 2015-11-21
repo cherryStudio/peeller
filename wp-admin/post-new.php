@@ -9,6 +9,11 @@
 /** Load WordPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
+/**
+ * @global string  $post_type
+ * @global object  $post_type_object
+ * @global WP_Post $post
+ */
 global $post_type, $post_type_object, $post;
 
 if ( ! isset( $_GET['post_type'] ) ) {
@@ -72,5 +77,9 @@ if ( is_multisite() ) {
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 $post_ID = $post->ID;
+if($post_type == "cpt")
+    include( ABSPATH . 'wp-admin/edit-form-cpt.php' );
+else
 include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
+
 include( ABSPATH . 'wp-admin/admin-footer.php' );

@@ -155,9 +155,17 @@ class Peeller_Dynamic_Content {
 		$this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
                 $this->loader->add_action('admin_menu', $plugin_admin, 'admin_menu' );
+                $this->loader->add_action('save_post', $plugin_admin, 'cpt_save_postdata');
+                $this->loader->add_action('add_meta_boxes',  $plugin_admin, 'cpt_add_meta_boxes');
+                $this->loader->add_action('init',  $plugin_admin, 'init_custom_post_types');
+                $this->loader->add_action('wp_ajax_get_form_builder',$plugin_admin, 'prefix_ajax_get_form_builder');
+                $this->loader->add_action('wp_ajax_get_post_structure',$plugin_admin, 'prefix_ajax_get_post_structure');
+                $this->loader->add_action('wp_ajax_get_post_meta',$plugin_admin, 'prefix_ajax_get_post_meta');
+                $this->loader->add_action('wp_ajax_save_post_meta',$plugin_admin, 'prefix_ajax_save_post_meta');
 
 	}
 
+      
 	/**
 	 * Register all of the hooks related to the public-facing functionality
 	 * of the plugin.
